@@ -1,14 +1,18 @@
 int sensor = 0;
 
 void setup() {
-  // put your setup code here, to run once:
+  // Iniciando a porta serial
   Serial.begin(9600);
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  // Lendo entrada da porta analógica
   sensor = analogRead(A0);
+
+  // Imprimindo entrada
   Serial.println(sensor);
   Serial.println("---");
+
+  // Temporizador para garantir a legibilidade
   delay(500);
 }
