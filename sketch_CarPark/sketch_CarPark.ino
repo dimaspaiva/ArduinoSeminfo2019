@@ -17,9 +17,9 @@ void loop() {
 
   // Decisão de acionamento do botão
   if (button == 1) {
-    digitalWrite(2, 1);
-  } else {
     digitalWrite(2, 0);
+  } else {
+    digitalWrite(2, 1);
   }
 
   // Garantir a legibilidade

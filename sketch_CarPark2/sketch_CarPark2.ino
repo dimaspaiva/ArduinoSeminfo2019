@@ -15,9 +15,9 @@ void loop() {
 
   // Lógica para acionamento do LED verde
   if (sensor > 300) {
-    digitalWrite(2, 1);
-  } else {
     digitalWrite(2, 0);
+  } else {
+    digitalWrite(2, 1);
   }
 
   // Parada para garantir a legibilidade
